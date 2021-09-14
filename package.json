@@ -1,0 +1,24 @@
+{
+  "name": "node-QR-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hspharwinder/node-QR-code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hspharwinder/node-QR-code/issues"
+  },
+  "homepage": "https://github.com/Hspharwinder/node-QR-code#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
