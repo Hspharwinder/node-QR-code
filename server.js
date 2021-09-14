@@ -1,5 +1,5 @@
 
-require('./qr-code');
+require('./qr-code-generator');
 const express = require('express')
 const app = express()
 const port = 3000

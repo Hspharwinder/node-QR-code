@@ -13,17 +13,16 @@ const generateQR = async text => {
         console.error(err)
     }
 }
+
+const segs = [
+  { data: 'ABCDEFG', mode: 'alphanumeric' },
+  { data: '0123456', mode: 'numeric' }
+]
 generateQR(segs);
 
 // toString
 QRCode.toString('I am a pony!',{type:'terminal'}, function (err, url) {
     console.log('toString ::: ', url);
-
-
-    const segs = [
-        { data: 'ABCDEFG', mode: 'alphanumeric' },
-        { data: '0123456', mode: 'numeric' }
-      ]
 })
 
 // generate QR Image
@@ -68,6 +67,3 @@ QRCode.toFile('QRCode.pdf', 'orderid-201, email-abc@gmail, phone-8989898, fullna
     if (err) throw err
     console.log('done')
 })
-
-
-QRCode.decode(QRCode-whiteBlack.png)
