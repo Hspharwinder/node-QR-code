@@ -2,13 +2,13 @@ const QRCode = require('qrcode');
 
 // toDataURL
 QRCode.toDataURL('I am a pony! test', function (err, url) {
-    console.log('toDataURL ::: ', url);
+    console.log('\n \n toDataURL ::: ', url);
 })
 
 // async await
 const generateQR = async text => {
     try {
-        console.log('async await ::::::::::: ',await QRCode.toDataURL(text))
+        console.log('\n \n async await ::::::::::: ',await QRCode.toDataURL(text))
     } catch (err) {
         console.error(err)
     }
@@ -22,7 +22,7 @@ generateQR(segs);
 
 // toString
 QRCode.toString('I am a pony!',{type:'terminal'}, function (err, url) {
-    console.log('toString ::: ', url);
+    console.log('\n \n toString ::: ', url);
 })
 
 // generate QR Image
@@ -33,7 +33,7 @@ QRCode.toFile('QRCode.png', 'orderid-201, email-abc@gmail, phone-8989898, fullna
     }
   }, function (err) {
     if (err) throw err
-    console.log('done')
+    console.log('\n \n QRCode.png done')
 })
 
 
@@ -44,7 +44,7 @@ QRCode.toFile('QRCode-blackWhite.png', 'orderid-201, email-abc@gmail, phone-8989
     }
   }, function (err) {
     if (err) throw err
-    console.log('done')
+    console.log('\n \n QRCode-blackWhite.png done')
 })
 
 QRCode.toFile('QRCode-whiteBlack.png', 'orderid-201, email-abc@gmail, phone-8989898, fullname-abc', {
@@ -54,7 +54,7 @@ QRCode.toFile('QRCode-whiteBlack.png', 'orderid-201, email-abc@gmail, phone-8989
     }
   }, function (err) {
     if (err) throw err
-    console.log('done')
+    console.log('\n \n QRCode-whiteBlack.png done')
 })
 
 // generate QR PDF
@@ -65,5 +65,5 @@ QRCode.toFile('QRCode.pdf', 'orderid-201, email-abc@gmail, phone-8989898, fullna
     }
 }, function (err) {
     if (err) throw err
-    console.log('done')
+    console.log('\n \n QRCode.pdf done')
 })
