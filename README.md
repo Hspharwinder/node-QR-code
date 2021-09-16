@@ -7,3 +7,7 @@ check qr-code-generator.js file for detail
 
 # Step to read qr-code
 npm install qrcode-reader
+
+# Branch ejs-download-qr-code
+1. npm install ejs
+2.  // set the view engine to ejs app.set('view engine', 'ejs'); server.js
